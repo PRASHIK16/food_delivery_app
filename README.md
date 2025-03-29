@@ -1,44 +1,18 @@
-# Food Delivery App UI UX Design Convent Into Flutter Code | Flutter 3
+project run karne ke steps with flutter setup
 
-# codeforany @codeforany
-
-- [Youtube Full Playlist: Food Delivery App UI UX Design Convent Into Flutter Code](https://www.youtube.com/playlist?list=PLzcRC7PA0xWQ2rYRGhSLjEvCXi3PS9J3N)
-- [Youtube Channel: @codeforany](https://www.youtube.com/channel/UCdQTp9wRK5vAOlEQZf9PHSg)
-- [Youtube Channel Subscribe: @codeforany](https://www.youtube.com/channel/UCdQTp9wRK5vAOlEQZf9PHSg?sub_confirmation=1)
-
-
-- [Youtube Video Part-1: App Induction & Startup UI & Welcome UI ](https://youtu.be/z8NHvp4tbrQ)
-- [Youtube Video Part-2: Login UI & Sign Up UI & Reset Password UI & New Password UI & OTP UI ](https://youtu.be/UYq7KGd15Cw)
-- [Youtube Video Part-3: On Boarding UI & Custom Bottom TabView UI ](https://youtu.be/EaHkIxwYv_Y)
-- [Youtube Video Part-4: Home Tab UI with Category ListView, Popular Restaurants ListView, Most Popular ListView, Recent ListView ](https://youtu.be/8tR-_-VLMb0)
-- [Youtube Video Part-5: Menu Tab UI & Menu Items UI ](https://youtu.be/xhGsV4dzFGs)
-- [Youtube Video Part-6: Food Details UI - Part1 ](https://youtu.be/apZ_l1MzziQ)
-- [Youtube Video Part-7: Food Details UI - Part2 & Offer Tab UI ](https://youtu.be/GN7cM-O4iTk)
-- [Youtube Video Part-8: Profile Tab UI ](https://youtu.be/uPRfs1-Xno4)
-- [Youtube Video Part-9: Payment Details UI & More Tab UI ](https://youtu.be/ad3VEaQXGNw)
-- [Youtube Video Part-10: Add Credit/Debit Card UI & Notifications List UI & Inbox List UI & About Us UI ](https://youtu.be/CsTGq9Deiu4)
-- [Youtube Video Part-11: User Cart UI (My Order UI)](https://youtu.be/YXCKlV0xkHU)
-- [Youtube Video Part-12: Checkout UI & Change Address UI with Google Map ](https://youtu.be/SgovU_BEFbE)
-- [Youtube Video Part-13: Checkout Place Order Status UI ](https://youtu.be/awyq_sInKIw)
-
-- [Youtube Video Part-14: Http ServiceCall Common Method And Create Extension Method And Login Api Calling](https://youtu.be/x0ELSN0YXI4)
-- [Youtube Video Part-15: Save Data in Local Using Shared Preferences lib, Route Config with GetIt lib And SignUp Api Calling](https://youtu.be/Jy2Jd_bfFOA)
-- [Youtube Video Part-16: Forgot Password Request Api & Verify Api & New Password Set Api Calling](https://youtu.be/Jw28xNvXWMw)
-
-
-UI UX App Design by: [Akila Weerakoon](https://www.behance.net/gallery/108639283/Meal-Monkey-Food-delivery-iOS-mobile-application)
-
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+1. Install zip file from  https://flutter-ko.dev/get-started/install/windows
+2. After installation extact this in c:/fluttter/src/here
+3. after this copy the lib file inside the c:/flutter/src/flutter/bin
+4. after this run "flutter doctor"
+5. make sure to resolve all the issue which aries after flutter doctor
+6. now install andriod studio
+7. Set up andriod studio and after this goto SDK manager
+8. After going into SDK manager select this "andriod SDK Command-line-Tools" 
+9. Run "flutter doctor" and check for resovled issues
+10. To reolve andriod licenses issue run this "flutter -doctor --andriod-licenses"
+11. Install Andriod studio fromn here https://visualstudio.microsoft.com
+12. Select which contains c++ and install 
+13. open the cloned project in vs code and (click run click on run without debugging) or (crtl + f5)
+14. Refer this below video for more information or to resolve any issue:
+    1. https://youtu.be/EhGW4UYpKSE?si=Nc8IEDHJ4scsW0jl
+    2. https://youtu.be/nOyyUZhKpM8?si=qhi5q4QlJTcvz5Eu
