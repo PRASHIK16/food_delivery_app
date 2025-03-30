@@ -10,7 +10,7 @@ project run karne ke steps with flutter setup
 8. After going into SDK manager select this "andriod SDK Command-line-Tools"
 9. Run "flutter pub get" to install all the dependencies
 10. Run "flutter doctor" and check for resovled issues
-11. To reolve andriod licenses issue run this "flutter -doctor --andriod-licenses"
+11. To reolve andriod licenses issue run this "flutter -doctor --android-licenses"
 12. Install Andriod studio fromn here https://visualstudio.microsoft.com
 13. Select which contains c++ and install 
 14. open the cloned project in vs code and (click run click on run without debugging) or (crtl + f5)
