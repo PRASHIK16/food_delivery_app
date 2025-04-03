@@ -1,11 +1,10 @@
 import 'dart:io';
-
 import 'package:flutter/material.dart';
+import 'package:flutter/foundation.dart'; // Import to use kIsWeb
 import 'package:food_delivery/common/color_extension.dart';
 import 'package:food_delivery/common/extension.dart';
 import 'package:food_delivery/common_widget/round_button.dart';
 import 'package:food_delivery/view/login/login_view.dart';
-
 import '../../common/globs.dart';
 import '../../common/service_call.dart';
 import '../../common_widget/round_textfield.dart';
@@ -28,7 +27,6 @@ class _SignUpViewState extends State<SignUpView> {
 
   @override
   Widget build(BuildContext context) {
-
     return Scaffold(
       body: SingleChildScrollView(
         child: Padding(
@@ -91,7 +89,7 @@ class _SignUpViewState extends State<SignUpView> {
                 controller: txtPassword,
                 obscureText: true,
               ),
-               const SizedBox(
+              const SizedBox(
                 height: 25,
               ),
               RoundTextfield(
@@ -102,15 +100,11 @@ class _SignUpViewState extends State<SignUpView> {
               const SizedBox(
                 height: 25,
               ),
-              RoundButton(title: "Sign Up", onPressed: () {
-                btnSignUp();
-                //  Navigator.push(
-                //       context,
-                //       MaterialPageRoute(
-                //         builder: (context) => const OTPView(),
-                //       ),
-                //     );
-              }),
+              RoundButton(
+                  title: "Sign Up",
+                  onPressed: () {
+                    btnSignUp();
+                  }),
               const SizedBox(
                 height: 30,
               ),
@@ -150,9 +144,7 @@ class _SignUpViewState extends State<SignUpView> {
     );
   }
 
-  //TODO: Action
   void btnSignUp() {
-
     if (txtName.text.isEmpty) {
       mdShowAlert(Globs.appName, MSG.enterName, () {});
       return;
@@ -185,19 +177,17 @@ class _SignUpViewState extends State<SignUpView> {
 
     endEditing();
 
+    // Handle platform-specific device type
     serviceCallSignUp({
       "name": txtName.text,
-
       "mobile": txtMobile.text,
       "email": txtEmail.text,
       "address": txtAddress.text,
       "password": txtPassword.text,
       "push_token": "",
-      "device_type": Platform.isAndroid ? "A" : "I"
+      "device_type": kIsWeb ? "W" : (Platform.isAndroid ? "A" : "I")
     });
   }
-
-  //TODO: ServiceCall
 
   void serviceCallSignUp(Map<String, dynamic> parameter) {
     Globs.showHUD();
@@ -208,7 +198,7 @@ class _SignUpViewState extends State<SignUpView> {
       if (responseObj[KKey.status] == "1") {
         Globs.udSet(responseObj[KKey.payload] as Map? ?? {}, Globs.userPayload);
         Globs.udBoolSet(true, Globs.userLogin);
-        
+
         Navigator.pushAndRemoveUntil(
             context,
             MaterialPageRoute(
